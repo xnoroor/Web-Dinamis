@@ -710,6 +710,10 @@ video {
   width: 100%;
 }
 
+.max-w-\[250px\] {
+  max-width: 250px;
+}
+
 .max-w-full {
   max-width: 100%;
 }
@@ -728,6 +732,22 @@ video {
 
 .origin-top-left {
   transform-origin: top left;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8,0,1,1);
+  }
+
+  50% {
+    transform: none;
+    animation-timing-function: cubic-bezier(0,0,0.2,1);
+  }
+}
+
+.animate-bounce {
+  animation: bounce 1s infinite;
 }
 
 .flex-wrap {
@@ -1080,6 +1100,22 @@ body {
 .burger-Active > span:nth-child(3) {
   --tw-rotate: -45deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8,0,1,1);
+  }
+
+  50% {
+    transform: none;
+    animation-timing-function: cubic-bezier(0,0,0.2,1);
+  }
+}
+
+.navmenu {
+  animation: bounce 1s infinite;
 }
 
 .hover\:border-primary:hover {

@@ -27,3 +27,6 @@ body {
 .burger-Active > span:nth-child(3){
     @apply -rotate-45;
 }
+.navmenu{
+    @apply animate-bounce;
+}
